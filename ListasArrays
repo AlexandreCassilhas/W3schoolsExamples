@@ -1,0 +1,38 @@
+thislist = ["apple", "banana", "cherry"]
+print (thislist)
+print (thislist[0])
+thislist[1] = "orange"
+print (thislist[1])
+# Varrendo a Lista
+for x in thislist:
+    print(x)
+# Testando a Lista
+print (" ")
+if "orange" in thislist:
+    print ("Orange existe")
+else:
+    print ("Não existe")
+# Outras Funções
+print (" ")
+print (len(thislist))
+print (" ")
+thislist.append("grape")
+for y in thislist:
+    print (y)
+# Inserindo em uma posição específica da lista
+print (" ")
+thislist.insert(2,"strawberry")
+for z in thislist:
+    print (z)
+# Removendo um item específico da lista
+print (" ")
+thislist.remove("orange")
+del thislist[0]
+for y in thislist:
+    print (y)
+print (thislist)
+print ('')
+# Esvazia a lista thislist.clear()
+# copiando a lista para outra lista
+novalista = thislist.copy()
+print (novalista)
